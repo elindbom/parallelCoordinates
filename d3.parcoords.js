@@ -64,7 +64,7 @@ var pc = function(selection) {
       .style("position", "absolute")
 
     .append("svg:g")
-      .attr("transform", "translate(" + __.margin.left + "," + __.margin.top + ")");
+      //.attr("transform", "translate(" + __.margin.left + "," + __.margin.top + ")");
 
   return pc;
 };
