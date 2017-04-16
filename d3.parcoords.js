@@ -10,7 +10,7 @@ d3.parcoords = function(config) {
     mode: "default",
     rate: 20,
     width: 600,
-    height: 300,
+    height: 100,
     margin: { top: 24, right: 0, bottom: 12, left: 40 },
     nullValueSeparator: "undefined", // set to "top" or "bottom"
     nullValueSeparatorPadding: { top: 8, right: 0, bottom: 8, left: 0 },
@@ -364,7 +364,7 @@ pc.applyDimensionDefaults = function(dims) {
     newDims[k].ticks= newDims[k].ticks != null ? newDims[k].ticks : 5;
     newDims[k].innerTickSize= newDims[k].innerTickSize != null ? newDims[k].innerTickSize : 6;
     newDims[k].outerTickSize= newDims[k].outerTickSize != null ? newDims[k].outerTickSize : 0;
-    newDims[k].tickPadding= newDims[k].tickPadding != null ? newDims[k].tickPadding : 1;
+    newDims[k].tickPadding= newDims[k].tickPadding != null ? newDims[k].tickPadding : 3;
     newDims[k].type= newDims[k].type ? newDims[k].type : types[k];
 
     newDims[k].index = newDims[k].index != null ? newDims[k].index : currIndex;
