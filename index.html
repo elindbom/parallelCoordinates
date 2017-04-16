@@ -178,6 +178,8 @@
           //.hideAxis(["name","group"])
           .render()
           .reorderable()
+          .attr("height", 200)
+            .style("border", "1px solid black");
             .brushMode("1D-axes");  // enable brushing
 
           // create data table, row hover highlighting
