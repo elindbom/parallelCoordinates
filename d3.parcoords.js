@@ -59,7 +59,7 @@ var pc = function(selection) {
   pc.svg = selection
     .append("svg")
       .attr("width", __.width)
-      .attr("height", 500)
+      .attr("height", __.height)
       .style("font", "14px sans-serif")
       .style("position", "absolute")
 
