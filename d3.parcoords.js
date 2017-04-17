@@ -10,7 +10,7 @@ d3.parcoords = function(config) {
     mode: "default",
     rate: 20,
     width: 600,
-    height: 300,
+    height: 100,
     margin: { top: 24, right: 0, bottom: 800, left: 40 },
     //nullValueSeparator: "undefined", // set to "top" or "bottom"
     nullValueSeparatorPadding: { top: 8, right: 0, bottom: 8, left: 0 },
