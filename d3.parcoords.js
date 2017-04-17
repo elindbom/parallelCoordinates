@@ -10,7 +10,7 @@ d3.parcoords = function(config) {
     mode: "default",
     rate: 20,
     width: 600,
-    height: 100,
+    height: 300,
     margin: { top: 24, right: 0, bottom: 800, left: 40 },
     //nullValueSeparator: "undefined", // set to "top" or "bottom"
     nullValueSeparatorPadding: { top: 8, right: 0, bottom: 8, left: 0 },
@@ -59,7 +59,7 @@ var pc = function(selection) {
   pc.svg = selection
     .append("svg")
       .attr("width", __.width)
-      .attr("height", __.height)
+      .attr("height", 500)
       .style("font", "14px sans-serif")
       .style("position", "absolute")
 
