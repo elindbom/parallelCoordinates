@@ -8,11 +8,11 @@ d3.parcoords = function(config) {
     brushedColor: null,
     alphaOnBrushed: 0.0,
     mode: "default",
-    rate: 20,
+    rate: 5,
     width: 600,
     height: 300,
     margin: { top: 24, right: 0, bottom: 12, left: 40 },
-    nullValueSeparator: "undefined", // set to "top" or "bottom"
+    //nullValueSeparator: "undefined", // set to "top" or "bottom"
     nullValueSeparatorPadding: { top: 8, right: 0, bottom: 8, left: 0 },
     color: "#069",
     composite: "source-over",
