@@ -58,5 +58,12 @@ input {
 .col-0 { width: 180px; }
 
 #grid .row:hover {
-  color: #dc2430;
+  color: red;
+}
+.cell:hover { 
+  float: left; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  width: 100px; 
+  height: 20px; 
 }
