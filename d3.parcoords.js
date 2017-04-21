@@ -81,7 +81,7 @@ var events = d3.dispatch.apply(this,["render", "resize", "highlight", "brush", "
     xscale = d3.scale.ordinal(),
     dragging = {},
     line = d3.svg.line(),
-    axis = d3.svg.axis().orient("left").ticks(5),
+    axis = d3.svg.axis().orient("left").ticks(5).tickFormat(d3.format(",.0f")),
     g, // groups for axes, brushes
     ctx = {},
     canvas = {},
