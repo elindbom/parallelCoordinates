@@ -57,13 +57,7 @@ input {
 .cell { float: left; overflow: hidden; white-space: nowrap; width: 100px; height: 18px; }
 .col-0 { width: 180px; }
 
-#grid .row:hover {
-  color: red;
-}
-.cell:hover { 
-  float: left; 
-  overflow: hidden; 
-  white-space: nowrap; 
-  width: 100px; 
-  height: 20px; 
-}
+#grid .row:hover {color: red;}
+.row, .header:hover { clear: left; font-size: 12px; line-height: 18px; height: 18px; }
+.cell:hover { float: left; overflow: hidden; white-space: nowrap; width: 100px; height: 20px; }
+.col-0:hover { width: 180px; }
