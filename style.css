@@ -60,4 +60,5 @@ input {
 #grid .row:hover {
   color: red;
   font-size: 16px;
+  font-weight: bold;
 }
