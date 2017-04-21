@@ -11,7 +11,7 @@ d3.parcoords = function(config) {
     rate: 20,
     width: 600,
     height: 300,
-    margin: { top: 24, right: 0, bottom: 12, left: 44 },
+    margin: { top: 24, right: 0, bottom: 12, left: 46 },
     //nullValueSeparator: "undefined", // set to "top" or "bottom"
     nullValueSeparatorPadding: { top: 8, right: 0, bottom: 8, left: 0 },
     color: "#069",
@@ -81,14 +81,7 @@ var events = d3.dispatch.apply(this,["render", "resize", "highlight", "brush", "
     xscale = d3.scale.ordinal(),
     dragging = {},
     line = d3.svg.line(),
-    axis = d3.svg.axis().each(function(d,i) { 
-        if(i==0){
-        d3.svg.axis().orient("left").ticks(5); 
-        } else {
-        d3.svg.axis().orient("right").ticks(5);
-        }
-
-    //.orient("left").ticks(5),
+    axis = d3.svg.axis().orient("left").ticks(5),
     g, // groups for axes, brushes
     ctx = {},
     canvas = {},
