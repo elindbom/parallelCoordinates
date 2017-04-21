@@ -62,6 +62,7 @@ var pc = function(selection) {
       .attr("height", __.height)
       .style("font", "14px sans-serif")
       .style("position", "absolute")
+      .style("font-weight", "bold")
 
     .append("svg:g")
       .attr("transform", "translate(" + __.margin.left + "," + __.margin.top + ")");
