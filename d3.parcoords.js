@@ -81,7 +81,14 @@ var events = d3.dispatch.apply(this,["render", "resize", "highlight", "brush", "
     xscale = d3.scale.ordinal(),
     dragging = {},
     line = d3.svg.line(),
-    axis = d3.svg.axis().orient("left").ticks(5),
+    axis = d3.svg.axis().each(function(d,i) { 
+        if(i==0){
+        d3.svg.axis().orient("left").ticks(5); 
+        } else {
+        d3.svg.axis().orient("right").ticks(5);
+        }
+
+    //.orient("left").ticks(5),
     g, // groups for axes, brushes
     ctx = {},
     canvas = {},
